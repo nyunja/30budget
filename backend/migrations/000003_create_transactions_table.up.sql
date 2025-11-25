@@ -1,0 +1,11 @@
+CREATE TABLE transactions (
+    id UUID PRIMARY KEY,
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    amount NUMERIC(10, 2) NOT NULL,
+    description VARCHAR(255),
+    category_id UUID REFERENCES categories(id) ON DELETE SET NULL,
+    date TIMESTAMP WITH TIME ZONE NOT NULL,
+    type transaction_type NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
