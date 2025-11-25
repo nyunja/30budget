@@ -331,19 +331,6 @@ docker-compose down -v && docker-compose up --build
 - Index frequently-queried columns (user_id, date)
 - Use connection pooling (configured in DB connection)
 
----
-
-## Next Steps
-
-- [ ] Add email notifications (Brevo integration)
-- [ ] Implement budget alerts (server-side scheduled jobs)
-- [ ] Add data export (CSV, PDF)
-- [ ] Implement recurring transactions
-- [ ] Add mobile app support
-- [ ] Deploy to cloud (AWS, GCP, DigitalOcean)
-
----
-
 ## Support & Contributions
 
 For issues or questions, please open a GitHub issue.
